@@ -16,7 +16,7 @@ const sampleProperties = [
     bedrooms: 3,
     bathrooms: 2,
     area: 180,
-    imageUrl: '/images/properties/casa1.jpg'
+    imageUrl: '/images/properties/modern-house.jpg'
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const sampleProperties = [
     bedrooms: 2,
     bathrooms: 2,
     area: 120,
-    imageUrl: '/images/properties/apartamento1.jpg'
+    imageUrl: '/images/properties/casa1.jpg'
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const sampleProperties = [
     bedrooms: 0,
     bathrooms: 0,
     area: 450,
-    imageUrl: '/images/properties/terreno1.jpg'
+    imageUrl: '/images/properties/hero.jpg'
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const sampleProperties = [
     bedrooms: 4,
     bathrooms: 3,
     area: 240,
-    imageUrl: '/images/properties/cobertura1.jpg'
+    imageUrl: '/images/properties/modern-house.jpg'
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const sampleProperties = [
     bedrooms: 3,
     bathrooms: 2,
     area: 160,
-    imageUrl: '/images/properties/casa2.jpg'
+    imageUrl: '/images/properties/casa1.jpg'
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const sampleProperties = [
     bedrooms: 0,
     bathrooms: 1,
     area: 75,
-    imageUrl: '/images/properties/comercial1.jpg'
+    imageUrl: '/images/properties/hero.jpg'
   }
 ];
 
