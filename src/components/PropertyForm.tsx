@@ -43,7 +43,9 @@ export default function PropertyForm({ onPropertyAdded }: PropertyFormProps) {
         imageUrl,
         description,
         propertyType,
-        features: features.split(',').map(feature => feature.trim()).filter(Boolean)
+        features: features.split(',').map(feature => feature.trim()).filter(Boolean),
+        type: 'venda',
+        status: ''
       });
 
       // Notificar o componente pai

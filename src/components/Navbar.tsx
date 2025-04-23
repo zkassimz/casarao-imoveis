@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`bg-gradient-to-r from-[#0f172a] to-[#0c1324] text-white py-4 px-6 fixed w-full z-50 transition-all duration-300 ${scrolled ? 'shadow-lg shadow-black/20 py-2' : ''}`}>
+      <nav className={`bg-primary text-white py-4 px-6 fixed w-full z-50 transition-all duration-300 ${scrolled ? 'shadow-lg shadow-black/20 py-2' : ''}`}>
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="flex items-center">
             <Image
@@ -38,26 +38,26 @@ export default function Navbar() {
               height={50}
               className="filter brightness-0 invert"
             />
-            <span className="ml-2 text-2xl font-bold text-amber-500">CASARÃO</span>
+            <span className="ml-2 text-2xl font-bold text-white">CASARÃO</span>
           </Link>
 
           {/* Menu para desktop */}
           <div className="hidden md:flex space-x-8">
-            <Link href="/" className="hover:text-amber-500 text-lg font-medium relative group">
+            <Link href="/" className="hover:text-secondary text-lg font-medium relative group">
               Início
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/imoveis" className="hover:text-amber-500 text-lg font-medium relative group">
+            <Link href="/imoveis" className="hover:text-secondary text-lg font-medium relative group">
               Imóveis
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/sobre" className="hover:text-amber-500 text-lg font-medium relative group">
+            <Link href="/sobre" className="hover:text-secondary text-lg font-medium relative group">
               Sobre
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/contato" className="hover:text-amber-500 text-lg font-medium relative group">
+            <Link href="/contato" className="hover:text-secondary text-lg font-medium relative group">
               Contato
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
 
@@ -85,35 +85,35 @@ export default function Navbar() {
 
         {/* Menu mobile */}
         <div 
-          className={`md:hidden bg-[#1a2437] transition-all duration-300 overflow-hidden ${
+          className={`md:hidden bg-primary-light transition-all duration-300 overflow-hidden ${
             isMenuOpen ? 'max-h-64 py-4 opacity-100' : 'max-h-0 py-0 opacity-0'
           }`}
         >
           <div className="flex flex-col space-y-4 px-6">
             <Link 
               href="/" 
-              className="hover:text-amber-500 text-lg font-medium block py-2 border-b border-gray-700"
+              className="hover:text-secondary text-lg font-medium block py-2 border-b border-primary-dark"
               onClick={() => setIsMenuOpen(false)}
             >
               Início
             </Link>
             <Link 
               href="/imoveis" 
-              className="hover:text-amber-500 text-lg font-medium block py-2 border-b border-gray-700"
+              className="hover:text-secondary text-lg font-medium block py-2 border-b border-primary-dark"
               onClick={() => setIsMenuOpen(false)}
             >
               Imóveis
             </Link>
             <Link 
               href="/sobre" 
-              className="hover:text-amber-500 text-lg font-medium block py-2 border-b border-gray-700"
+              className="hover:text-secondary text-lg font-medium block py-2 border-b border-primary-dark"
               onClick={() => setIsMenuOpen(false)}
             >
               Sobre
             </Link>
             <Link 
               href="/contato" 
-              className="hover:text-amber-500 text-lg font-medium block py-2"
+              className="hover:text-secondary text-lg font-medium block py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               Contato
