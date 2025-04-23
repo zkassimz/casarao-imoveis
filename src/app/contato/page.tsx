@@ -7,11 +7,18 @@ export default function Contato() {
   return (
     <main className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <div className="relative w-full pt-12 pb-16 flex items-center justify-center">
-        <div className="text-center">
+      <section className="relative w-full h-[30vh] md:h-[40vh]">
+        <Image 
+          src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80"
+          alt="Entre em Contato"
+          fill
+          className="object-cover brightness-50"
+          priority
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg">Entre em Contato</h1>
         </div>
-      </div>
+      </section>
 
       <section className="py-16">
         <div className="container mx-auto px-4">

@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 15, 23, 42;
-  --background-end-rgb: 12, 19, 36;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 248, 248, 248; /* background-light */
+  --background-end-rgb: 239, 239, 239; /* background-DEFAULT */
 }
 
 body {
@@ -59,20 +59,20 @@ body {
 /* Adicionar uma linha de separação sutil entre o cabeçalho e o conteúdo */
 .header-divider {
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(245, 158, 11, 0.3), transparent);
+  background: linear-gradient(to right, transparent, rgba(51, 51, 51, 0.3), transparent); /* Substituir com cor primary */
   margin: 0;
   padding: 0;
 }
 
 /* Classes personalizadas */
 .footer {
-  background-color: #0f172a;
+  background-color: #333333; /* primary */
   color: white;
 }
 
 .btn-primary {
-  background-color: #f59e0b;
-  color: black;
+  background-color: #333333; /* primary */
+  color: white;
   font-weight: 700;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -99,9 +99,9 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #d97706;
+  background-color: #4A4A4A; /* primary-light */
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 4px 12px rgba(51, 51, 51, 0.3);
 }
 
 .nav-link {
@@ -115,11 +115,11 @@ body {
 }
 
 .nav-link:hover {
-  color: #d1d5db;
+  color: #E0E0E0; /* secondary */
 }
 
 .card {
-  background-color: #1f2937;
+  background-color: #FFFFFF; /* accent */
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -152,11 +152,11 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  color: #d1d5db;
+  color: #4A4A4A; /* primary-light */
 }
 
 .property-card {
-  background-color: #1f2937;
+  background-color: #FFFFFF; /* accent */
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -181,18 +181,18 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: white;
+  color: #333333; /* primary */
 }
 
 .property-card-price {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #4ade80;
+  color: #1A1A1A; /* primary-dark */
   margin-bottom: 0.5rem;
 }
 
 .property-card-details {
-  color: #d1d5db;
+  color: #4A4A4A; /* primary-light */
   margin-bottom: 1rem;
 }
 
@@ -204,29 +204,29 @@ body {
 }
 
 .property-card-feature {
-  background-color: #374151;
-  color: white;
+  background-color: #E0E0E0; /* secondary */
+  color: #333333; /* primary */
   font-size: 0.75rem;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }
 
 .property-card-address {
-  color: #9ca3af;
+  color: #4A4A4A; /* primary-light */
   font-size: 0.875rem;
 }
 
 .section-title {
   font-size: 1.875rem;
   font-weight: 700;
-  color: white;
+  color: #333333; /* primary */
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .section-subtitle {
   font-size: 1.25rem;
-  color: #d1d5db;
+  color: #4A4A4A; /* primary-light */
   margin-bottom: 2rem;
   text-align: center;
   max-width: 48rem;
@@ -241,7 +241,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/properties/hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1296&q=80');
   background-size: cover;
   background-position: center;
 }
