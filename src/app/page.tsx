@@ -68,11 +68,11 @@ export default function Home() {
             <div className="md:w-1/3 animate-fade-in opacity-0 transform translate-y-4 transition-all duration-700">
               <div className="animate-float">
                 <Image
-                  src="/images/logo-icon.png"
-                  alt="Casarão Logotipo"
-                  width={180}
-                  height={180}
-                  className="mx-auto filter brightness-0 invert"
+                  src="/images/logo-icon.svg"
+                  alt="ImobTech Logotipo"
+                  width={60}
+                  height={60}
+                  className="mb-4"
                 />
               </div>
             </div>
@@ -130,18 +130,17 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2 animate-fade-in opacity-0 transform translate-y-4 transition-all duration-700">
               <Image 
-                src="/images/logo.png" 
-                alt="Casarão Imobiliária" 
-                width={400} 
-                height={200} 
-                className="mx-auto md:mx-0"
+                src="/images/logo.svg" 
+                alt="ImobTech Logo" 
+                width={200} 
+                height={100} 
+                className="mx-auto mb-8"
               />
-              <h2 className="section-title mt-8">Sobre a Casarão</h2>
-              <p className="text-primary-light mb-6">
-                A Casarão Imobiliária é especializada em encontrar o imóvel perfeito para você. Com anos de experiência no mercado, nossa equipe está pronta para ajudar em todas as etapas da compra, venda ou locação do seu imóvel.
-              </p>
-              <p className="text-primary-light">
-                Nosso compromisso é oferecer um atendimento personalizado e de qualidade, garantindo a satisfação dos nossos clientes em cada negociação.
+              <h2 className="text-3xl font-bold mb-6 text-secondary">Nossa História</h2>
+              <p className="text-primary-light leading-relaxed mb-8">
+                A ImobTech foi fundada com a missão de transformar o mercado imobiliário através da tecnologia. 
+                Nosso objetivo é proporcionar uma experiência transparente e eficiente na compra, venda e 
+                aluguel de imóveis, combinando o conhecimento de nossos consultores com soluções digitais inovadoras.
               </p>
             </div>
             <div className="md:w-1/2">

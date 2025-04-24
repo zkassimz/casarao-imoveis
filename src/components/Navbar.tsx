@@ -32,13 +32,13 @@ export default function Navbar() {
         <div className="container mx-auto flex justify-between items-center">
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo-icon.png"
-              alt="Casarão Imobiliária"
-              width={50}
-              height={50}
-              className="filter brightness-0 invert"
+              src="/images/logo-icon.svg"
+              alt="ImobTech Logotipo"
+              width={40}
+              height={40}
+              className="mr-2"
             />
-            <span className="ml-2 text-2xl font-bold text-white">CASARÃO</span>
+            <span className="text-xl font-bold text-primary hidden md:inline-block">ImobTech</span>
           </Link>
 
           {/* Menu para desktop */}

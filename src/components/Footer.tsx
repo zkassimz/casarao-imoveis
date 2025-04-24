@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,9 +9,18 @@ export default function Footer() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold text-white mb-4">Casarão Imobiliária</h3>
-              <p className="text-secondary mb-2">Endereço dos bons negócios</p>
-              <p className="text-secondary">Encontre o imóvel dos seus sonhos com a Casarão.</p>
+              <div className="flex items-center mb-4">
+                <Image
+                  src="/images/logo-icon.svg"
+                  alt="ImobTech"
+                  width={40}
+                  height={40}
+                  className="mr-2"
+                />
+                <h3 className="text-xl font-bold text-white">ImobTech</h3>
+              </div>
+              <p className="text-secondary mb-2">Tecnologia em Imóveis</p>
+              <p className="text-secondary">Inovação e excelência para encontrar o imóvel dos seus sonhos.</p>
             </div>
             
             <div>
@@ -51,7 +61,7 @@ export default function Footer() {
           </div>
           
           <div className="border-t border-primary-dark mt-8 pt-8 text-center text-secondary-dark">
-            <p>&copy; {new Date().getFullYear()} Casarão Imobiliária. Todos os direitos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} ImobTech. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>

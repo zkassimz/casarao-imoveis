@@ -3,12 +3,16 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Providers from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Casarão Imobiliária - Endereço dos bons negócios",
-  description: "Encontre os melhores imóveis com a Casarão Imobiliária",
+  title: "ImobTech - Tecnologia em Imóveis",
+  description: "Encontre os melhores imóveis com a ImobTech, tecnologia e inovação a serviço do seu imóvel",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({
@@ -19,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

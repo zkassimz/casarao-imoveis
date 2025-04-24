@@ -20,16 +20,25 @@ export default function Sobre() {
       {/* Hero Section */}
       <div className="relative w-full pt-12 pb-16 flex items-center justify-center bg-gradient-to-b from-[#0f172a] to-[#0c1324]">
         <div className="text-center animate-fade-in opacity-0 transform translate-y-4 transition-all duration-700">
-          <div className="mb-10">
-            <Image
-              src="/images/logo-icon.png"
-              alt="Casarão Logotipo"
-              width={100}
-              height={100}
-              className="mx-auto animate-fade-in opacity-0 transform translate-y-4 transition-all duration-700 filter brightness-0 invert"
+          <div className="flex flex-col items-center mb-12">
+            <Image 
+              src="/images/logo-icon.svg" 
+              alt="ImobTech Logotipo" 
+              width={100} 
+              height={100} 
+              className="mb-6"
             />
+            <h1 className="text-4xl font-bold text-primary mb-4">Sobre a ImobTech</h1>
+            <div className="w-20 h-1 bg-accent mb-8"></div>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-lg mb-6">Sobre a Casarão</h1>
+
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <p className="text-lg text-primary-light mb-6">
+              A ImobTech nasceu da união entre a experiência no mercado imobiliário e a inovação tecnológica.
+              Nossa missão é proporcionar uma experiência diferenciada na compra, venda e aluguel de imóveis,
+              combinando atendimento personalizado com soluções digitais de ponta.
+            </p>
+          </div>
         </div>
       </div>
       
