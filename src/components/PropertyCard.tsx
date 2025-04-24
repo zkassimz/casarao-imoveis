@@ -36,11 +36,10 @@ export default function PropertyCard({
           <CachedImage 
             src={imageUrl || 'https://via.placeholder.com/800x600?text=Imóvel'} 
             alt={title} 
-            className="transition-transform duration-500 hover:scale-110"
+            className="transition-transform duration-500 hover:scale-110 object-cover w-full h-full"
             width={400}
             height={300}
             style={{objectFit: 'cover'}}
-            fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             priority
           />

@@ -58,8 +58,7 @@ export default function PropertyDetails() {
                 alt={property.title}
                 width={800}
                 height={600}
-                className="object-cover"
-                fill
+                className="object-cover w-full h-full"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
               />
