@@ -52,10 +52,10 @@ export default function Footer() {
             <div>
               <h3 className="text-xl font-bold text-white mb-4">Contato</h3>
               <p className="text-secondary mb-2">
-                <span className="font-bold">WhatsApp:</span> +55 77 9840-9023
+                <span className="font-bold">WhatsApp:</span> +55 11 98765-4321
               </p>
               <p className="text-secondary mb-2">
-                <span className="font-bold">Email:</span> valenthinadecarvalho@gmail.com
+                <span className="font-bold">Email:</span> contato@imobtech.com.br
               </p>
             </div>
           </div>

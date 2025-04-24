@@ -35,9 +35,9 @@ export default function Contato() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">WhatsApp</h3>
-                    <p className="text-gray-300">+55 77 9840-9023</p>
+                    <p className="text-gray-300">+55 11 98765-4321</p>
                     <a 
-                      href="https://wa.me/5577984090230" 
+                      href="https://wa.me/5511987654321" 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       className="text-amber-500 hover:text-amber-400 mt-2 inline-block"
@@ -55,9 +55,9 @@ export default function Contato() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white">Email</h3>
-                    <p className="text-gray-300">valenthinadecarvalho@gmail.com</p>
+                    <p className="text-gray-300">contato@imobtech.com.br</p>
                     <a 
-                      href="mailto:valenthinadecarvalho@gmail.com" 
+                      href="mailto:contato@imobtech.com.br" 
                       className="text-amber-500 hover:text-amber-400 mt-2 inline-block"
                     >
                       Enviar email
@@ -75,9 +75,9 @@ export default function Contato() {
                   <div>
                     <h3 className="text-xl font-bold text-white">Endereço</h3>
                     <p className="text-gray-300">
-                      Av. Principal, 1234<br />
-                      Centro - Sua Cidade/UF<br />
-                      CEP: 00000-000
+                      Av. Paulista, 1000, Sala 301<br />
+                      Bela Vista - São Paulo/SP<br />
+                      CEP: 01310-100
                     </p>
                   </div>
                 </div>
@@ -91,8 +91,8 @@ export default function Contato() {
                   <div>
                     <h3 className="text-xl font-bold text-white">Horário de Atendimento</h3>
                     <p className="text-gray-300">
-                      Segunda a Sexta: 8h às 18h<br />
-                      Sábado: 8h às 12h<br />
+                      Segunda a Sexta: 9h às 18h<br />
+                      Sábado: 9h às 13h<br />
                       Domingo: Fechado
                     </p>
                   </div>
