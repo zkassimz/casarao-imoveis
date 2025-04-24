@@ -19,10 +19,8 @@ export default function PropertyDetails() {
     currency: 'BRL',
   }).format(property.price);
 
-  // Determinar a URL da imagem
-  const imageSrc = property.driveImageId
-    ? `https://drive.google.com/uc?export=view&id=${property.driveImageId}`
-    : property.imageUrl;
+  // Usar diretamente a URL da imagem
+  const imageSrc = property.imageUrl || 'https://via.placeholder.com/800x600?text=Imóvel';
 
   return (
     <main className="min-h-screen py-8">

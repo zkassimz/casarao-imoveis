@@ -105,7 +105,6 @@ export default function Home() {
                     bathrooms={property.bathrooms}
                     area={property.area}
                     imageUrl={property.imageUrl}
-                    driveImageId={property.driveImageId}
                   />
                 </div>
               ))}

@@ -14,7 +14,6 @@ export interface Property {
   features?: string[];
   type: 'venda' | 'aluguel';
   status: string;
-  driveImageId?: string;
   createdAt?: Timestamp;
   updatedAt?: Timestamp;
 }

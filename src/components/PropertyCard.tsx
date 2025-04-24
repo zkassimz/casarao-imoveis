@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import CachedImage from './CachedImage';
 
 interface PropertyCardProps {
-  id: number;
+  id: string | number;
   title: string;
   price: number;
   address: string;
@@ -11,7 +11,6 @@ interface PropertyCardProps {
   bathrooms: number;
   area: number;
   imageUrl: string;
-  driveImageId?: string;
 }
 
 export default function PropertyCard({ 
@@ -22,14 +21,8 @@ export default function PropertyCard({
   bedrooms, 
   bathrooms, 
   area, 
-  imageUrl,
-  driveImageId
+  imageUrl
 }: PropertyCardProps) {
-  // Definir a URL da imagem - priorizar imagem do Google Drive se disponível
-  const imageSrc = driveImageId
-    ? `https://drive.google.com/uc?export=view&id=${driveImageId}`
-    : imageUrl;
-
   // Formatar o preço em reais
   const formattedPrice = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -40,19 +33,16 @@ export default function PropertyCard({
     <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-primary/20 transition-all duration-300 transform hover:-translate-y-2">
       <Link href={`/imoveis/${id}`}>
         <div className="relative overflow-hidden h-56">
-          <div className="absolute inset-0 bg-secondary animate-pulse"></div>
-          <Image 
-            src={imageSrc} 
+          <CachedImage 
+            src={imageUrl || 'https://via.placeholder.com/800x600?text=Imóvel'} 
             alt={title} 
             className="transition-transform duration-500 hover:scale-110"
+            width={400}
+            height={300}
+            style={{objectFit: 'cover'}}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            style={{objectFit: 'cover'}}
             priority
-            onError={(e) => {
-              // Fallback para uma imagem padrão em caso de erro
-              (e.target as any).src = 'https://via.placeholder.com/400x300?text=Imóvel';
-            }}
           />
           <div className="absolute top-0 right-0 bg-primary text-white font-bold px-3 py-1 z-10 rounded-bl-lg">
             {formattedPrice}
