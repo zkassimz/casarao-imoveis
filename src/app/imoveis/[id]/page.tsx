@@ -1,14 +1,14 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { properties, getPropertyById } from '@/data/properties';
+import CachedImage from '@/components/CachedImage';
 
 export default function PropertyDetails() {
   const params = useParams();
-  const propertyId = Number(params.id);
+  const propertyId = params.id as string;
   
   // Encontrar o imóvel específico
   const property = getPropertyById(propertyId) || properties[0];
@@ -55,17 +55,15 @@ export default function PropertyDetails() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Imagem */}
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <Image 
+              <CachedImage 
                 src={imageSrc || 'https://via.placeholder.com/800x600?text=Imóvel'}
                 alt={property.title}
-                fill
+                width={800}
+                height={600}
                 className="object-cover"
+                fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
-                onError={(e) => {
-                  // Fallback para uma imagem padrão em caso de erro
-                  (e.target as any).src = 'https://via.placeholder.com/800x600?text=Imóvel';
-                }}
               />
             </div>
             
